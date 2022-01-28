@@ -50,4 +50,20 @@ async def on_message(message):
         response = random.choice(hitchhiker_quotes)
         await message.channel.send(response)
 
+    #Assortment of 'It's always sunny' quotes
+    sunny_quotes = [
+        'Can I offer you a nice egg in this trying time?',
+        'Oh, look at me! The millionaire who goes to see doctors!',
+        'I\'m not fat. I\'m cultivating mass',
+        'Oh, you unzipped me! It\'s all coming back! It\'s all coming back; I hate you! It\'s all coming back, you understand?? I DON\'T LIKE IT! I DON\'T LIKE TO THINK ABOUT IT!',
+        'Is your cat making TOO MUCH NOISE ALL OF THE TIME?',
+        'Well, I don\'t know how many years on this Earth I got left. I\'m gonna get real weird with it',
+         ]
+
+
+    if message.content == 'sunny!':
+        response = random.choice(sunny_quotes)
+        await message.channel.send(response)
+    
+
 client.run(TOKEN)
