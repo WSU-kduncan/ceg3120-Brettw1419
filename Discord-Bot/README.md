@@ -1,14 +1,14 @@
 # Project 1 - Discord Bot
 #### Setup
-###### * Recieving an API token
+##### * Recieving an API token
 The API token from discord can be copied from the [developer page](https://discord.com/developers/applications) where you created your bot. From that page, click the application your bot is under and click the bot tab on the left menu. Near the top of the page you will see "Reveal token" along with a conveinient way to copy to clipboard.
-###### * Where to keep API tokens
+##### * Where to keep API tokens
 API tokens should be kept in an .env file within the same directory as the bot's python level itself. To protect this token, make sure that .env is added to .gitignore so that the token is not pushed to the public internet.
-###### * Dependencies
+##### * Dependencies
 The bot requires **Python 3** to run. In addition, the following packages need to be installed to run (through pip3):
-###### * Discord.py
+###### *    Discord.py
 pip3 install -U discord.py
-###### * dotenv
+###### *    dotenv
 pip3 install -U dotenv
 
 #### Usage
