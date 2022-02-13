@@ -58,10 +58,10 @@
     * On the left side menu, you click on elastic IP and on the resulting page you can allocated your IP. Once done, highlight the EIP and click actions where you'll see "associate elastic ip address". Clicking through there you'll be able to associate the elastic IP as well as claim the private IP the instance is using.
 
 8. Create a screnshot your instance details and add it to your project write up.
-    ![Instance success](./images/2-8)
+    ![Instance success](./images/2-8.png)
 
 9. ssh in to your instance. Change the hostname to "PROJECT2-AMI" where AMI is some version of the AMI you chose. Say how you did it.
     * Once I ssh'd into the system, I used the hostnamectl as the root user and specified the name I wanted (PROJECT2-AMZNLINUX2). I then rebooted the system and logged back in to verify the hostname change
 
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname
-    ![Hostname changed](./images/2-10)
+    ![Hostname changed](./images/2-10.png)
