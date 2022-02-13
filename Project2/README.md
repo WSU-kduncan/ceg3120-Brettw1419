@@ -3,25 +3,25 @@
 1. Create a VPC
     * Tag it with "PROJECT2-VPC"
     * Specify a /24 private IP address range
-    ![VPC Creation](/images/1-1.png)
+    ![VPC Creation](./images/1-1.png)
 
 2. Create a subnet
     * Tag it with "PROJECT2-Subnet"
     * Specify a /28 private IP address range
     * Attach it to your VPC
-    ![Subnet Creation](/images/1-2.png)
+    ![Subnet Creation](./images/1-2.png)
 
 3. Create an internet gateway
     * Tag it with "PROJECT2-gw"
     * Attach it to your VPC
-    ![IG Creation](/images/1-3.png)
+    ![IG Creation](./images/1-3.png)
 
 4. Create a route table
     * Tag it with "PROJECT2-routetable"
     * Attach it to your VPC
     * Associate it with your subnet
     * Add a routing table rule that sends traffic to all destination to your internet gateway
-    ![Route Table Creation](/images/1-4.png)
+    ![Route Table Creation](./images/1-4.png)
 
 5. Create a security group
     * Tag it with "PROJECT2-sg"
@@ -31,7 +31,7 @@
         * Instances within the VPC
     * Attach it to your VPC
     * Image should include your Inbound rules
-    ![Security Group Creation](/images/1-5.png)
+    ![Security Group Creation](./images/1-5.png)
 
 ### PART 2 - EC2 instances
 1. Create a new instance. Give a write up of the following:
@@ -58,10 +58,10 @@
     * On the left side menu, you click on elastic IP and on the resulting page you can allocated your IP. Once done, highlight the EIP and click actions where you'll see "associate elastic ip address". Clicking through there you'll be able to associate the elastic IP as well as claim the private IP the instance is using.
 
 8. Create a screnshot your instance details and add it to your project write up.
-    ![Instance success](/images/2-8)
+    ![Instance success](./images/2-8)
 
 9. ssh in to your instance. Change the hostname to "PROJECT2-AMI" where AMI is some version of the AMI you chose. Say how you did it.
     * Once I ssh'd into the system, I used the hostnamectl as the root user and specified the name I wanted (PROJECT2-AMZNLINUX2). I then rebooted the system and logged back in to verify the hostname change
 
 10. Create a screenshot your ssh connection to your instance and add it to your project write up - make sure it shows your new hostname
-    ![Hostname changed](/images/2-10)
+    ![Hostname changed](./images/2-10)
